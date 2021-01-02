@@ -1,11 +1,11 @@
+import { ChakraProvider } from '@chakra-ui/react'
 import type { AppProps /*, AppContext */ } from 'next/app'
 import Head from 'next/head'
-import 'styles/globals.css'
+import { theme } from 'styles/theme'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-      {' '}
       <Head>
         <meta charSet="utf-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
@@ -35,8 +35,10 @@ function MyApp({ Component, pageProps }: AppProps) {
           href="/favicon/apple-touch-icon.png"
         ></link>
         <meta name="theme-color" content="#ffffff" />
-      </Head>
-      <Component {...pageProps} />
+      </Head>{' '}
+      <ChakraProvider resetCSS theme={theme}>
+        <Component {...pageProps} />
+      </ChakraProvider>
     </>
   )
 }
