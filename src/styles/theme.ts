@@ -17,6 +17,12 @@ export const theme = extendTheme({
   },
   colors: {
     black: '#16161D',
+    primary: {
+      main: '#c62828',
+      light: '#ff5f52',
+      dark: '#8e0000',
+      contrastText: '#fff',
+    },
   },
   fonts,
   breakpoints,

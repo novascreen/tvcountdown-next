@@ -1,7 +1,13 @@
 import { ChakraProvider } from '@chakra-ui/react'
+import { Container } from 'components/App/Container'
+import { Header } from 'components/App/Header'
 import type { AppProps /*, AppContext */ } from 'next/app'
 import Head from 'next/head'
 import { theme } from 'styles/theme'
+import { ReactQueryDevtools } from 'react-query/devtools'
+import { QueryClient, QueryClientProvider } from 'react-query'
+
+const queryClient = new QueryClient()
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -36,9 +42,14 @@ function MyApp({ Component, pageProps }: AppProps) {
         ></link>
         <meta name="theme-color" content="#ffffff" />
       </Head>{' '}
-      <ChakraProvider resetCSS theme={theme}>
-        <Component {...pageProps} />
-      </ChakraProvider>
+      <QueryClientProvider client={queryClient}>
+        <ChakraProvider resetCSS theme={theme}>
+          <Container height="100vh">
+            <Header />
+            <Component {...pageProps} />
+          </Container>
+        </ChakraProvider>
+      </QueryClientProvider>
     </>
   )
 }
