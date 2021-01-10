@@ -1,6 +1,6 @@
 import { SearchResponse, Show } from 'types'
 
-const BASE_URL = 'http://api.tvmaze.com'
+const BASE_URL = 'https://api.tvmaze.com'
 // const COUNTRYCODE = 'US'
 
 const getJSON = (res: Response) => {
