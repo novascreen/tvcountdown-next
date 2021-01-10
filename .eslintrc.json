@@ -21,7 +21,7 @@
     "@typescript-eslint/no-unused-vars": "off",
     "@typescript-eslint/no-unused-params": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
-    "@typescript-eslint/no-unsafe-assignment": "warn"
+    "@typescript-eslint/no-unsafe-assignment": "off"
   },
   "overrides": [
     {

@@ -44,7 +44,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       </Head>{' '}
       <QueryClientProvider client={queryClient}>
         <ChakraProvider resetCSS theme={theme}>
-          <Container height="100vh">
+          <Container>
             <Header />
             <Component {...pageProps} />
           </Container>
