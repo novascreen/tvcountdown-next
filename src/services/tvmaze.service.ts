@@ -1,7 +1,7 @@
 import { SearchResponse, Show } from 'types'
 
 const BASE_URL = 'http://api.tvmaze.com'
-const COUNTRYCODE = 'US'
+// const COUNTRYCODE = 'US'
 
 const getJSON = (res: Response) => {
   if (!res.ok) throw new Error('Fail')

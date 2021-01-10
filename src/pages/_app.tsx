@@ -43,6 +43,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="theme-color" content="#ffffff" />
       </Head>{' '}
       <QueryClientProvider client={queryClient}>
+        <ReactQueryDevtools initialIsOpen={false} />
         <ChakraProvider resetCSS theme={theme}>
           <Container>
             <Header />

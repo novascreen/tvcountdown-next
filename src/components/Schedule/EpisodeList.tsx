@@ -5,7 +5,7 @@ interface Props {
 }
 
 const EpisodeList = (props: Props) => {
-  return <div></div>
+  return <div>{props.a}</div>
 }
 
 export default EpisodeList

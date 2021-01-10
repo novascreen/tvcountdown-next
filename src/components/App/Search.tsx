@@ -1,4 +1,4 @@
-import { SearchIcon, StarIcon } from '@chakra-ui/icons'
+import { SearchIcon } from '@chakra-ui/icons'
 import {
   Box,
   Center,
@@ -6,7 +6,6 @@ import {
   InputGroup,
   InputLeftElement,
   Text,
-  useColorMode,
 } from '@chakra-ui/react'
 import ShowList from 'components/Show/ShowList'
 import Card from 'components/UI/Card'

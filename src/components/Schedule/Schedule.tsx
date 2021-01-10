@@ -5,7 +5,7 @@ interface Props {
 }
 
 const Schedule = (props: Props) => {
-  return <div></div>
+  return <div>{props.a}</div>
 }
 
 export default Schedule
